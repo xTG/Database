@@ -5,6 +5,8 @@ include_once('database.class.php');
 /****************************************************************************/
 set_time_limit(0);
 $nbDatas = 20000;
+if( !file_exists('cache') )
+	mkdir('cache');
 
 echo '/********************************************************************/<br />';
 echo '*                       Initialisation                               *<br />';
